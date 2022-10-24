@@ -19,6 +19,9 @@ function HeaderLink({ Icon, text, avatar, feed, active, hidden }) {
       >
         {text}
       </h4>
+      {active && (
+        <span className="hidden lg:inline-flex h-0.5 w-[calc(100%+10px)] bg-black dark:bg-white rounded-t-full" />
+      )}
     </div>
   )
 }
